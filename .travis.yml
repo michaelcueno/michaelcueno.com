@@ -1,8 +1,7 @@
 language: ruby
 rvm:
-  - 2.1
-script:
-  - bundle exec jekyll build
+  - 2.3.3
+script: bundle exec jekyll build
 deploy:
   provider: s3
   access_key_id: AKIAI3AU3RRBYBYQSMNQ
