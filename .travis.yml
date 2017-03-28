@@ -3,6 +3,7 @@ rvm:
 - 2.3.3
 script: bundle exec jekyll build
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAI2L5DAOUUMKI7JXQ
   secret_access_key:
