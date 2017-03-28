@@ -10,6 +10,5 @@ deploy:
     secure: xC6ZLZ/020YTAXCwjdhvPiU9RjoQ2eCXB/ePXqEBHDH/YkdhA/GOq0B/u6HbYVRV35EQbz+JP2Tplh7WOAT71X8kgPycXGPoR8h6Msf6+DN+E0q8pp2Q8N3sCr6M3IlTM5h3Ujo8WF1PL8JlS1PAFWAB9GE+SQQ8biVA0cA6NcZ0XF4PuqlfO6gKbXf7TSP3TNThip4IYKWc88tUp02ye8UDlA4KuXCw03YmQAdqHMm4VYh/jdKfTtuz7fjD9JQW+tsWo+bN+3AcAmd7u4BtkWOqNuTmopo5c2F38HAynv5q8EEiRLoZcWc+SPheslcM7/JXUekp/R3ByImeemGMi1SoOL8gxavb24jv4YtuRnBC7Pp1/NwWeg/vATryjgdae/VfPaTDc0HoUj981q3tsgXFu1LuUcUE1kjxXNY4mR2PBWQoEJGfZtkZR0wX6A8448xTqMRe5gkI291vuBfAA61w/42M/H+el04VFVHtP0tVlewFtJqIeP5LybK2Tnz+W16J/FTHlgpSJhuUL2/OZvPE8xvrYiu6ztRgKmyrTJmCxcXeWyuAblws5Gg5L9AaLDvL0bm/dmNcucmi1lyDf1x1v2t8x3ppzV0NCjMJbJUXhIehE/LjoiFVAsk9M7KVwgsfnZZ8p3aTFePQL7XZBerHf2MjsItOx9ssNDxLuE4=
   bucket: www.michaelcueno.com
   local-dir: _site
-  acl: public_read
   on:
     repo: michaelcueno/michaelcueno.com
