@@ -35,7 +35,7 @@ $on-laptop:        800px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
 
   border-radius: 25px;
   border-color: $grey-color-light;
@@ -47,7 +47,15 @@ $on-laptop:        800px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
+}
+
+.fart-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
 }
 
 .content {
@@ -57,6 +65,72 @@ $on-laptop:        800px;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+}
+
+.fade-in-out-1 {
+  animation: fadeInOut1 4s ease-in-out infinite;
+}
+
+.fade-in-out-2 {
+  animation: fadeInOut2 4s ease-in-out infinite;
+}
+
+.fade-in-out-3 {
+  animation: fadeInOut3 4s ease-in-out infinite;
+}
+
+@keyframes fadeInOut1 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut2 {
+  0% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  64% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut3 {
+  0% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // Use media queries like this:

@@ -1,0 +1,7 @@
+#!/bin/bash 
+set -e 
+set -x
+
+aws s3 sync _site s3://www.michaelcueno.com --delete
+
+aws cloudfront create-invalidation --distribution-id E323L7KJPESSKJ --paths "/*"
