@@ -18,50 +18,51 @@ layout: page
       const { Items } = JSON.parse(response);
       document.getElementById('toplevel').innerHTML = 
 `
+<h2>Live: </h2>
   Fremont: ${Items[Items.length-1].fremont}
 <br />
   Upper Walls: ${Items[Items.length-1].upper_walls}
 `;
 
-      const data = {
-          datasets: [{
-              label: 'Fremont',
-              backgroundColor: 'rgb(255, 99, 132)',
-              borderColor: 'rgb(255, 99, 132)',
-              data: Items.map(item => ({
-                  x: item.timestamp,
-                  y: item.fremont,
-              })),
-            }, {
-              label: 'upperwalls',
-              backgroundColor: 'rgb(149, 52, 235)',
-              borderColor: 'rgb(149, 52, 235)',
-              data: Items.map(item => ({
-                  x: item.timestamp,
-                  y: item.upper_walls,
-              })),
-            }]
-        };
+  const data = {
+      datasets: [{
+          label: 'Fremont',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: Items.map(item => ({
+              x: item.timestamp,
+              y: item.fremont,
+          })),
+        }, {
+          label: 'upperwalls',
+          backgroundColor: 'rgb(149, 52, 235)',
+          borderColor: 'rgb(149, 52, 235)',
+          data: Items.map(item => ({
+              x: item.timestamp,
+              y: item.upper_walls,
+          })),
+        }]
+    };
 
-      const config = {
-          type: 'line',
-          data: data,
-          options: {
-              scales: {
-                  x: {
-                      type: 'timeseries',
-                      time: {
-                      }
-                    }
+  const config = {
+      type: 'line',
+      data: data,
+      options: {
+          scales: {
+              x: {
+                  type: 'timeseries',
+                  time: {
+                  }
                 }
             }
-        };
+        }
+    };
 
-      const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-      );
-    }
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+}
 
   const xhttp = new XMLHttpRequest();
   xhttp.open("GET", API_URL, true);

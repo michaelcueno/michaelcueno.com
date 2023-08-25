@@ -16,3 +16,6 @@ github_username: michaelcueno
 
 # Build settings
 markdown: kramdown
+
+exclude:   
+  - bread/node_modules
